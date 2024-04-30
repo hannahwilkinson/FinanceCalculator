@@ -1,0 +1,31 @@
+print("FINANCES")
+print("------------------------------------------")
+print("Current Balances:")
+
+currentCheckings = 100
+currentSavings = 150
+print("    Checkings: ", currentCheckings)
+print("    Savings: ", currentSavings)
+
+paycheckAmt = int(input("Paycheck Amount: "))
+
+#print("Asign the percentage that you want allocated to your savings")
+#Percent = "30%" # @param ["10%", "20%", "30%"]
+
+percentSavings = int(input("Percentage allocated towards savings: "))
+savingsAmt = int(percentSavings * paycheckAmt / 100)
+
+#percentSavings = int(input(Percent * paycheckAmt))
+
+#savings = int(paycheckAmt * 0.4)
+#checkings = paycheckAmt - savings
+
+print("------------------------------------------")
+print("To Deposit:")
+print("    Savings: ", savingsAmt)
+checkings = paycheckAmt - savingsAmt
+print("    Checkings: ", checkings)
+#print("Checkings Account:", checkings)
+#print("Savings Account:", savings)
+
+#print(dropdown)
